@@ -30,6 +30,6 @@ public class Pedido
     [Column(TypeName = "decimal(10,2)")]
     public decimal ValorTotal {  get; set; }
     
-       [JsonIgnore]
+    [JsonIgnore]
     public ICollection<Produto>? Produtos { get; set; }
 }
